@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Animation logoAnim, textAnim;
     ImageView logoImg;
     TextView logoTxt;
-    private static int SPLASH_SCREEN = 4000;
+    private static int SPLASH_SCREEN = 5500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity.this, BottomNav.class);
                 startActivity(intent);
                 finish();
             }
